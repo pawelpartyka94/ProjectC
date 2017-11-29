@@ -39,7 +39,7 @@ void * LoadIpv6 (){
 
 }
 
-//function to load ICMP library
+
 void * LoadIcmp6 (){
 
 	void *IcmpLib6 = malloc ( sizeof (void ) );	//handle to ICMP lib
@@ -52,7 +52,6 @@ void * LoadIcmp6 (){
 
 }
 
-//function to send packets from linked list
 void SendPacket ( unsigned char *datagram ){
 	  int i, status, frame_length, sd, bytes;
 	  char *interface, *src_ip, *dst_ip, cmd [30], input [128];
